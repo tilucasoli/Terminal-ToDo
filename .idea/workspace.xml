@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6a3a7338-f2fe-46d2-8f31-b7c6de3c7716" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.build/checkouts/swift-argument-parser" />
+  </component>
+  <component name="ProjectId" id="1ZrDK8cqUjNyqtYaFWsC7TW9P1L" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Sources/Terminal-ToDo" />
+    <property name="settings.editor.selected.configurable" value="SwiftSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Sources/Terminal-ToDo" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Swift Package Run.Terminal-ToDo">
+    <configuration name="Terminal-ToDo" type="SwiftPackageManagerRunConfiguration" factoryName="Swift Package Run" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Terminal-ToDo" TARGET_NAME="Terminal-ToDo" CONFIG_NAME="Terminal-ToDo" RUN_TARGET_PROJECT_NAME="Terminal-ToDo" RUN_TARGET_NAME="Terminal-ToDo">
+      <method v="2">
+        <option name="SPM.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Terminal-ToDoTests" type="SwiftPackageManagerTestRunConfiguration" factoryName="Swift Package Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Terminal-ToDo" TARGET_NAME="Terminal-ToDoTests" CONFIG_NAME="Terminal-ToDoTests" RUN_TARGET_PROJECT_NAME="Terminal-ToDo" RUN_TARGET_NAME="Terminal-ToDoTests" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="SPM.BUILD_TASK_PROVIDER" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6a3a7338-f2fe-46d2-8f31-b7c6de3c7716" name="Default Changelist" comment="" />
+      <created>1585588252254</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585588252254</updated>
+      <workItem from="1585588253750" duration="222000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1826" height="252" key="GridCell.Tab.0.bottom" timestamp="1585588578220">
+      <screen x="48" y="27" width="3792" height="1053" />
+    </state>
+    <state width="1826" height="252" key="GridCell.Tab.0.bottom/48.27.3792.1053@48.27.3792.1053" timestamp="1585588578220" />
+    <state width="1826" height="252" key="GridCell.Tab.0.center" timestamp="1585588578219">
+      <screen x="48" y="27" width="3792" height="1053" />
+    </state>
+    <state width="1826" height="252" key="GridCell.Tab.0.center/48.27.3792.1053@48.27.3792.1053" timestamp="1585588578219" />
+    <state width="1826" height="252" key="GridCell.Tab.0.left" timestamp="1585588578218">
+      <screen x="48" y="27" width="3792" height="1053" />
+    </state>
+    <state width="1826" height="252" key="GridCell.Tab.0.left/48.27.3792.1053@48.27.3792.1053" timestamp="1585588578218" />
+    <state width="1826" height="252" key="GridCell.Tab.0.right" timestamp="1585588578220">
+      <screen x="48" y="27" width="3792" height="1053" />
+    </state>
+    <state width="1826" height="252" key="GridCell.Tab.0.right/48.27.3792.1053@48.27.3792.1053" timestamp="1585588578220" />
+  </component>
+</project>
