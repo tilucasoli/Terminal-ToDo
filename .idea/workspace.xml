@@ -9,7 +9,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a3a7338-f2fe-46d2-8f31-b7c6de3c7716" name="Default Changelist" comment="" />
+    <list default="true" id="6a3a7338-f2fe-46d2-8f31-b7c6de3c7716" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/Terminal-ToDo/main.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/Terminal-ToDo/main.swift" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +28,7 @@
     </projectState>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.build/checkouts/swift-argument-parser" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZrDK8cqUjNyqtYaFWsC7TW9P1L" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -67,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585588252254</updated>
-      <workItem from="1585588253750" duration="222000" />
+      <workItem from="1585588253750" duration="2514000" />
     </task>
     <servers />
   </component>
@@ -75,21 +79,21 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1826" height="252" key="GridCell.Tab.0.bottom" timestamp="1585588578220">
+    <state width="1826" height="252" key="GridCell.Tab.0.bottom" timestamp="1585590023824">
       <screen x="48" y="27" width="3792" height="1053" />
     </state>
-    <state width="1826" height="252" key="GridCell.Tab.0.bottom/48.27.3792.1053@48.27.3792.1053" timestamp="1585588578220" />
-    <state width="1826" height="252" key="GridCell.Tab.0.center" timestamp="1585588578219">
+    <state width="1826" height="252" key="GridCell.Tab.0.bottom/48.27.3792.1053@48.27.3792.1053" timestamp="1585590023824" />
+    <state width="1826" height="252" key="GridCell.Tab.0.center" timestamp="1585590023823">
       <screen x="48" y="27" width="3792" height="1053" />
     </state>
-    <state width="1826" height="252" key="GridCell.Tab.0.center/48.27.3792.1053@48.27.3792.1053" timestamp="1585588578219" />
-    <state width="1826" height="252" key="GridCell.Tab.0.left" timestamp="1585588578218">
+    <state width="1826" height="252" key="GridCell.Tab.0.center/48.27.3792.1053@48.27.3792.1053" timestamp="1585590023823" />
+    <state width="1826" height="252" key="GridCell.Tab.0.left" timestamp="1585590023823">
       <screen x="48" y="27" width="3792" height="1053" />
     </state>
-    <state width="1826" height="252" key="GridCell.Tab.0.left/48.27.3792.1053@48.27.3792.1053" timestamp="1585588578218" />
-    <state width="1826" height="252" key="GridCell.Tab.0.right" timestamp="1585588578220">
+    <state width="1826" height="252" key="GridCell.Tab.0.left/48.27.3792.1053@48.27.3792.1053" timestamp="1585590023823" />
+    <state width="1826" height="252" key="GridCell.Tab.0.right" timestamp="1585590023824">
       <screen x="48" y="27" width="3792" height="1053" />
     </state>
-    <state width="1826" height="252" key="GridCell.Tab.0.right/48.27.3792.1053@48.27.3792.1053" timestamp="1585588578220" />
+    <state width="1826" height="252" key="GridCell.Tab.0.right/48.27.3792.1053@48.27.3792.1053" timestamp="1585590023824" />
   </component>
 </project>
