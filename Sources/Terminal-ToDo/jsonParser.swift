@@ -11,8 +11,28 @@ import Foundation
 let fileManager = FileManager.default
 let currentPath = fileManager.currentDirectoryPath
 
-let categoryPath = currentPath + "category.json"
-let goalsPath = currentPath + "goals.json"
+let directoryPaths = Directory()
+
+func createFiles() {
+    
+    let folderData = directoryPaths.directoryPath
+    let categoryPath = directoryPaths.categoryPath.path
+    let goalsPath = directoryPaths.goalsPath.path
+    
+    let start = "[]"
+    let dataStart = Data(start.utf8)
+    
+    do{
+        try fileManager.createDirectory(at: folderData, withIntermediateDirectories: false, attributes: nil)
+        
+        fileManager.createFile(atPath: categoryPath, contents: dataStart, attributes: nil)
+        fileManager.createFile(atPath: goalsPath, contents: dataStart, attributes: nil)    }
+    catch{
+        return
+    }
+    
+}
+
 
 func addingTaskInFile(goal: Goal) -> String {
     
@@ -44,18 +64,18 @@ func addingTaskInFile(goal: Goal) -> String {
 //    var arrayCategories = fileInClassCategory()
 //    arrayCategories.append(category)
 //
-//    let novoJSONdata = try JSONEncoder().encode(arrayGoals)
+//    let novoJSONdata = try JSONEncoder().encode(arrayCategories)
 //
 //    // Transforma JSON Data em String
 //    let novoJSON = String(data: novoJSONdata, encoding: .utf8)
 //
 //    return novoJSON!
-//
 //}
+
 
 func writeInFile(json: String?){
     do {
-        try json?.write(to: URL(fileURLWithPath: currentPath), atomically: true, encoding: .utf8)
+        try json?.write(to: directoryPaths.goalsPath, atomically: true, encoding: .utf8)
         
     } catch {
         print(error.localizedDescription)
@@ -70,7 +90,7 @@ func createAndSave(goal: Goal){
 
 func fileInClassGoal() -> [Goal]{
     do {
-        let jsonInFileData = try Data(contentsOf: URL(fileURLWithPath: currentPath + "goal.txt"))
+        let jsonInFileData = try Data(contentsOf: directoryPaths.goalsPath)
         let arrayClass = try JSONDecoder().decode([Goal].self, from: jsonInFileData)
         
         return arrayClass
@@ -85,7 +105,7 @@ func fileInClassGoal() -> [Goal]{
 
 func fileInClassCategory() -> [Category]{
     do {
-        let jsonInFileData = try Data(contentsOf: URL(fileURLWithPath: currentPath + "category.txt"))
+        let jsonInFileData = try Data(contentsOf: directoryPaths.categoryPath)
         let arrayClass = try JSONDecoder().decode([Category].self, from: jsonInFileData)
         
         return arrayClass

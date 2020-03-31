@@ -9,6 +9,8 @@
 
 import ArgumentParser
 
+createFiles()
+
 struct TodoParser: ParsableCommand {
     
     static var configuration = CommandConfiguration(abstract:"Mostrar Lista", subcommands: [AddTitle.self, AddTask.self, ShowGoals.self])
@@ -54,6 +56,7 @@ extension TodoParser {
             todo.addTask(nameCategory: args.category, task: task)
 
             print("Item Adicionado")
+
         }
         
     }
@@ -70,7 +73,6 @@ extension TodoParser {
             
             var todo = Todo()
             todo.showGoals(category: args.category)
-            
             
         }
         

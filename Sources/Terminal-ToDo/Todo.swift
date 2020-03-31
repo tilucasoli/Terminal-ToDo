@@ -38,7 +38,8 @@ struct Todo {
         let category = self.categories.filter({return $0.name == nameCategory}).first
         
         guard let firstCategory = category else {
-            print("Categoria inexistente")
+            addCategory(nameCategory: nameCategory)
+            addTask(nameCategory: nameCategory, task: task)
             return
         }
         let goal = Goal(category: firstCategory, text: task)
