@@ -26,6 +26,16 @@ class Goal: Codable {
     func editText(text: String){
         self.text = text
     }
+    //recebe o index e retorna de acordo com o estado check 
+    func stringTemplate(index: Int)->String{
+        let indexString = (String(index)+".").lightBlack
+        if self.checked {
+            return "      \(indexString)"+"  ✔  \(self.text.applyingColor(.lightBlack))".green
+        } else {
+            return "      \(indexString)  ◻  \(self.text)"
+        }
+        
+    }
     
 }
 

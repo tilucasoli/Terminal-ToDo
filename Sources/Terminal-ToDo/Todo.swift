@@ -8,15 +8,12 @@
 
 import Foundation
 
-var categoryTest = Category(name: "Academy")
-
-
 struct Todo {
     
     var goals: [Goal] = []
-    var categories: [Category] = [categoryTest]
+    var categories: [Category] = []
     
-    // Precisa ser Ajustada
+    //cria uma nova categoria
     mutating func addCategory(nameCategory: String){
         let existingCategories = categories.map({return $0.name})
         
@@ -32,29 +29,42 @@ struct Todo {
         self.categories.append(category)
     
     }
-    
+    //verifica se a categoria ja existe, se exitir ela adiciona a task a ela, se nao existir, ela cria uma nova categoria e adiciona a task a ela
     mutating func addTask(nameCategory:String, task: String){
 
-        let category = self.categories.filter({return $0.name == nameCategory}).first
+        let categories = self.categories.filter({return $0.name == nameCategory})
+        
+        let category = categories.first
         
         guard let firstCategory = category else {
             addCategory(nameCategory: nameCategory)
             addTask(nameCategory: nameCategory, task: task)
             return
         }
+        
         let goal = Goal(category: firstCategory, text: task)
-   
+        let goalsInCategory = fileInClassGoal().filter{$0.category.name == nameCategory}
+        
+        print("")
+        print(goal.stringTemplate(index: goalsInCategory.count))
+
         createAndSave(goal: goal)
     }
     
+    //mostra as tasks de determinada Categoria
     mutating func showGoals(category: String){
-        
+        let titleCategory = category.bold.underline
         let goalsInCategory = fileInClassGoal().filter{$0.category.name == category}
         
-        print("Category: \(category)")
-        print(goalsInCategory.map{$0.text})
-    }
+        print("\n   \(titleCategory):")
+        for i in 0..<goalsInCategory.count {
+            print(goalsInCategory[i].stringTemplate(index: i))
+        }
     
+        
+            
+    }
 }
+    
 
         

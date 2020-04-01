@@ -13,10 +13,9 @@ let currentPath = fileManager.currentDirectoryPath
 
 let directoryPaths = Directory()
 
+//cria diretórios necessários para o armazenamento de dados
 func createFiles() {
-    
     let folderData = directoryPaths.directoryPath
-    let categoryPath = directoryPaths.categoryPath.path
     let goalsPath = directoryPaths.goalsPath.path
     
     let start = "[]"
@@ -24,12 +23,27 @@ func createFiles() {
     
     do{
         try fileManager.createDirectory(at: folderData, withIntermediateDirectories: false, attributes: nil)
+
+        fileManager.createFile(atPath: goalsPath, contents: dataStart, attributes: nil)
         
-        fileManager.createFile(atPath: categoryPath, contents: dataStart, attributes: nil)
-        fileManager.createFile(atPath: goalsPath, contents: dataStart, attributes: nil)    }
+    }
     catch{
         return
     }
+    
+}
+
+//atualiza os dados no arquivo
+func refreshTasks(goals: [Goal]) -> String{
+    do {
+        let novoJSONdata = try JSONEncoder().encode(goals)
+        let novoJSON = String(data: novoJSONdata, encoding: .utf8)
+        return novoJSON!
+    } catch {
+        return "🤬"
+        
+    }
+    
     
 }
 
@@ -60,19 +74,7 @@ func addingTaskInFile(goal: Goal) -> String {
 
 }
 
-//func addingCategoryInFile(category: Category) -> String {
-//    var arrayCategories = fileInClassCategory()
-//    arrayCategories.append(category)
-//
-//    let novoJSONdata = try JSONEncoder().encode(arrayCategories)
-//
-//    // Transforma JSON Data em String
-//    let novoJSON = String(data: novoJSONdata, encoding: .utf8)
-//
-//    return novoJSON!
-//}
-
-
+//adiciona os dados no arquivo
 func writeInFile(json: String?){
     do {
         try json?.write(to: directoryPaths.goalsPath, atomically: true, encoding: .utf8)
@@ -82,12 +84,13 @@ func writeInFile(json: String?){
     }
 }
 
+//recebe um Goal, transforma em json e armazena ele em um arquivo
 func createAndSave(goal: Goal){
     let json = addingTaskInFile(goal: goal)
     writeInFile(json: json)
 }
 
-
+//importa os dados em formato json contidos no arquivo e tranforma em array de Goals
 func fileInClassGoal() -> [Goal]{
     do {
         let jsonInFileData = try Data(contentsOf: directoryPaths.goalsPath)
@@ -103,30 +106,4 @@ func fileInClassGoal() -> [Goal]{
 
 }
 
-func fileInClassCategory() -> [Category]{
-    do {
-        let jsonInFileData = try Data(contentsOf: directoryPaths.categoryPath)
-        let arrayClass = try JSONDecoder().decode([Category].self, from: jsonInFileData)
-        
-        return arrayClass
-        
-    } catch  {
-        let category = Category(name: "Error")
-        
-        return [category]
-    }
 
-}
-
-func writebrackets(url: URL){
-    let brackets = "[]"
-    
-    do {
-        try brackets.write(to: url, atomically: true, encoding: .utf8)
-        
-    } catch {
-        return
-
-    }
-    
-}
