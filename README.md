@@ -16,61 +16,12 @@ A description of this package.
     Pronto o script está pronto para uso!😍
 
 ## Funções:
-    1. Adicionar uma nova tarefa
-    2. Marcar quais tarefas já foram feitas
-    3. Painel com todas suas tasks categorizadas 
-    4. Comandos sinalizados
-
-
-### Aprender:
-- [ ] Aprender a consumir Api (Sobre series)
-- [x] Aprender a estilizar fontes no terminal (Mudar cor, negrito, sublinhar)
-
-
-### 10/03:
-- [x] Aprender sobre Collections
-- [x] Implementar o comando adicionar listas 
-- [ ] Aprender a  add listas, acrescentar
-
-### 11/03:
-- [x] Aprender Argument Parser 
-- [x] Implementar Argument Parser (add titles, add tasks)
-
-### 12/03:
-- [x] Refatoramento do código: adicionando classes e structs
-- [x] Talk Yuri: enums, optional and collections
-
-### 13/03:
-- [x] Aprender como que faz JSON
-- [x] Aprender como faz leitura e escrita de arquivos
-- [x] Implementar o que foi aprendido 
-
-
-### 16/03: 
-- [x] Organizar o código
-- [x] Implementar o decoder(mostrar na tela)
-
-
-### 31/03:
-- [x] Script para criar um arquivo no diretório documentos
-
-        1. Acessar o diretório documentos, 
-        2. Criar diretório TodoTerminalData,
-        3. criar um arquivo .json,
-        4. colocar dentro diretorio documentos, 
-        5. escrever os dados dentro do arquivo, 
-        6. ler o arquivo 
-
-- [x] Escrever e ler arquivo
-    
-
-
-### 01/04: 
-- [x] check-uncheck
-- [x] Visual como cores e fontes no terminal (show-goals)
-- [x] Video explicando o código 
-- [x] Comentar o código 
-
+1. Adicionar uma nova tarefa
+     - $ Terminal-ToDo {Nome_da_Categoria} "{Texto_da_Tarefa}"
+     - exemplo: $ Terminal-ToDo Academy "Estudar Swift"
+2. Marcar quais tarefas já foram feitas
+3. Painel com todas suas tasks categorizadas 
+4. Comandos sinalizados
 
 #### Sugestões de funcionalidades
  1. Escreva aqui ...
