@@ -9,6 +9,7 @@ A description of this package.
     $ cd Terminal-ToDo
     $ swift build -c release
     $ cd .build/release
+    $ sudo su
     $ mv Terminal-ToDo /usr/local/bin
     $ Terminal-ToDo
     
