@@ -4,11 +4,10 @@ A description of this package.
 ![IMAGE](https://user-images.githubusercontent.com/62367544/78246026-dc7cdc00-74be-11ea-8ea8-4725f0741ca7.jpg)
 
 ## Funções:
-    1. Add uma serie as suas series
-    2. Marcar eps que assistiu
-    3. Poder fazer comentarios sobre eps
-    4. Painel com (quantos episódios ja assistiu,  porcentagem para finalizar, Comentários Feitos)
-    5. Comandos sinalizados
+    1. Adicionar uma nova tarefa
+    2. Marcar quais tarefas já foram feitas
+    3. Painel com todas suas tasks categorizadas 
+    4. Comandos sinalizados
 
 
 ### Aprender:
