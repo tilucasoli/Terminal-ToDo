@@ -42,12 +42,12 @@ Funções:
 
 ## 31/03:
 - [x] Script para criar um arquivo no diretório documentos 
-        1. Acessar o diretório documentos, 
-        2. Criar diretório TodoTerminalData,
-        3. criar um arquivo .json,
-        4. colocar dentro diretorio documentos, 
-        5. escrever os dados dentro do arquivo, 
-        6. ler o arquivo 
+    1. Acessar o diretório documentos, 
+    2. Criar diretório TodoTerminalData,
+    3. criar um arquivo .json,
+    4. colocar dentro diretorio documentos, 
+    5. escrever os dados dentro do arquivo, 
+    6. ler o arquivo 
 - [x] Escrever e ler arquivo
     
 
