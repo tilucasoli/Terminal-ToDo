@@ -57,3 +57,7 @@ Funções:
 - [x] Visual como cores e fontes no terminal (show-goals)
 - [x] Video explicando o código 
 - [x] Comentar o código 
+
+
+## Sugestões de funcionalidades
+ 1. Escreva aqui ...
