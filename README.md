@@ -9,6 +9,7 @@
     $ swift build -c release
     $ cd .build/release
     $ sudo su
+    $ exit
     $ mv Terminal-ToDo /usr/local/bin
     $ Terminal-ToDo
     
