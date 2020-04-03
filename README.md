@@ -2,7 +2,7 @@
 
 ![IMAGE](https://user-images.githubusercontent.com/62367544/78246026-dc7cdc00-74be-11ea-8ea8-4725f0741ca7.jpg)
 
-## Como instalar🤩
+## Como instalar 🤩
 
     $ git clone https://github.com/tilucasoli/Terminal-ToDo
     $ cd Terminal-ToDo
@@ -14,7 +14,7 @@
     
     Pronto o script está pronto para uso!😍
 
-## Funções:🤯
+## Funções 🤯
 ### Adicionar uma nova tarefa
     $ Terminal-ToDo add-task {Nome_da_Categoria} "{Texto_da_Tarefa}"
     exemplo: $ Terminal-ToDo add-task Academy "Estudar Swift"
