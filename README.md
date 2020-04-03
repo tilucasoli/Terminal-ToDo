@@ -16,12 +16,24 @@ A description of this package.
     Pronto o script está pronto para uso!😍
 
 ## Funções:
-1. Adicionar uma nova tarefa
-     - $ Terminal-ToDo {Nome_da_Categoria} "{Texto_da_Tarefa}"
-     - exemplo: $ Terminal-ToDo Academy "Estudar Swift"
-2. Marcar quais tarefas já foram feitas
-3. Painel com todas suas tasks categorizadas 
-4. Comandos sinalizados
+### Adicionar uma nova tarefa
+    $ Terminal-ToDo add-task {Nome_da_Categoria} "{Texto_da_Tarefa}"
+    exemplo: $ Terminal-ToDo add-task Academy "Estudar Swift"
+    
+### Mostrar tasks filtradas por um categoria
+    $ Terminal-ToDo show-goals {Nome_da_Categoria}
+    exemplo: $ Terminal-ToDo show-goals Academy
+    
+### Marcar quais tarefas já foram feitas
+    $ Terminal-ToDo check {Nome_da_Categoria} {Numero_da_task}
+    exemplo: $ Terminal-ToDo check Academy 0
+    
+### Mostrar todas as Tasks
+    $ Terminal-ToDo show-all
+
+### Remover um determinada task
+    $ Terminal-ToDo remove {Nome_da_Categoria} {Numero_da_task}
+    exemplo: $ Terminal-ToDo remove Academy 0
 
 #### Sugestões de funcionalidades
  1. Escreva aqui ...
