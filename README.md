@@ -34,5 +34,3 @@
     $ Terminal-ToDo remove {Nome_da_Categoria} {Numero_da_task}
     exemplo: $ Terminal-ToDo remove Academy 0
 
-#### Sugestões de funcionalidades
- 1. Escreva aqui ...
