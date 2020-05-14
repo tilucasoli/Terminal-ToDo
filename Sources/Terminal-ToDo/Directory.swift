@@ -12,7 +12,7 @@ struct Directory {
     let directoryPath :URL
     let goalsPath :URL
     
-    init(){
+    init(fileManager: FileManager){
         let directoryDocuments = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first
         
         self.directoryPath = directoryDocuments!.appendingPathComponent("toDoTerminalData", isDirectory: true)
@@ -20,3 +20,4 @@ struct Directory {
 
     }
 }
+

@@ -18,11 +18,9 @@ struct Todo {
         let existingCategories = categories.map({return $0.name})
         
         for name in existingCategories {
-            
             if (name == nameCategory) {
                 return
             }
-            
         }
         
         let category = Category(name: nameCategory)
@@ -33,7 +31,6 @@ struct Todo {
     mutating func addTask(nameCategory:String, task: String){
 
         let categories = self.categories.filter({return $0.name == nameCategory})
-        
         let category = categories.first
         
         guard let firstCategory = category else {
@@ -53,8 +50,7 @@ struct Todo {
     
     //mostra as tasks de determinada Categoria
     mutating func showGoals(category: String){
-        let titleCategory = category.bold.underline
-        let goalsInCategory = fileInClassGoal().filter{$0.category.name == category}
+        
         
         print("\n   \(titleCategory):")
         for i in 0..<goalsInCategory.count {

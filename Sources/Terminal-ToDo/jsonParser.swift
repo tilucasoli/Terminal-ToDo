@@ -8,23 +8,19 @@
 
 import Foundation
 
-let fileManager = FileManager.default
-let currentPath = fileManager.currentDirectoryPath
-
-let directoryPaths = Directory()
+let directoryPaths = Directory(fileManager: FileManager())
 
 //cria diretórios necessários para o armazenamento de dados
-func createFiles() {
+func createFiles(initialContent: String) {
     let folderData = directoryPaths.directoryPath
     let goalsPath = directoryPaths.goalsPath.path
     
-    let start = "[]"
-    let dataStart = Data(start.utf8)
+    let initialContent = Data(initialContent.utf8)
     
     do{
         try fileManager.createDirectory(at: folderData, withIntermediateDirectories: false, attributes: nil)
 
-        fileManager.createFile(atPath: goalsPath, contents: dataStart, attributes: nil)
+        fileManager.createFile(atPath: goalsPath, contents: initialContent, attributes: nil)
         
     }
     catch{

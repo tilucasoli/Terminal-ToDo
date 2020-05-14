@@ -20,4 +20,9 @@ struct Category: Codable {
         self.name = name
     }
     
+    func categoryTemplate(){
+        let titleCategory = category.bold.underline
+        let goalsInCategory = fileInClassGoal().filter{$0.category.name == category}
+    }
+    
 }
